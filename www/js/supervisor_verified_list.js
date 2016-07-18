@@ -147,8 +147,7 @@ var subco_status=subco_status.getDate()+'/'+parseInt(subco_status.getMonth() + 1
 
 if( typeof sup !== 'undefined'){
 
-if(qualification_id == '1' || qualification_id == '2' || qualification_id == '3' || qualification_id == '4' || qualification_id == '5'  || qualification_id == '6'){
-//var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextpv('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/education-icon.png" class="li_imgs_1"><h2 class="li_h2">'+superr_objj.name+''+superr_objj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+superr_objj.verification_for+'</p><p class="li_p">'+superr_objj.taskname+'</p><p class="li_p">'+superr_objj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+superr_objj.verification_user_id+'</b></a></li>'
+/*if(qualification_id == '1' || qualification_id == '2' || qualification_id == '3' || qualification_id == '4' || qualification_id == '5'  || qualification_id == '6'){
 var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextpv('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/education-icon.png" class="li_imgs_1"><h2 class="li_h2">Subject Name : '+superr_objj.name+'  '+superr_objj.Last_Name+'</h2 class="li_h2"><p class="li_p">Type : '+superr_objj.verification_for+'</p><p class="li_p">Taskname : '+superr_objj.qualification_name+'</p><p class="li_p ">Tvo Verified On : <span class="listrejectcolora">'+subco_status+'</span></p><span class="li_span">SH Assigned Date : '+date+'</span><b class="li_b_1">Ref.No:'+superr_objj.Ref_no+'</b></a></li>'
 
 $('#list_align_verified').append(lis);
@@ -169,7 +168,7 @@ $('#list_align_verified').append(lis);
 }
 
 
-/*asset*/
+//asset/
 if(qualification_id == '63' ){
   
 //var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextpv('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/asset-verification.png" class="li_imgs_1"><h2 class="li_h2">'+superr_objj.First_Name+''+superr_objj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+superr_objj.verification_for+'</p><p class="li_p">'+superr_objj.taskname+'</p><p class="li_p">'+superr_objj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+superr_objj.verification_user_id+'</b></a></li>'
@@ -180,7 +179,7 @@ $('#list_align_verified').append(lis);
 
 
 
-/*address*/
+//address/
 if(qualification_id == '29' || qualification_id == '31' ){
   //alert('address');
 //var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextpv('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/address-icon.png" class="li_imgs_1"><h2 class="li_h2">'+superr_objj.First_Name+''+superr_objj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+superr_objj.verification_for+'</p><p class="li_p">'+superr_objj.qualification_name+'</p><p class="li_p">'+superr_objj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+superr_objj.verification_user_id+'</b></a></li>'
@@ -190,7 +189,7 @@ $('#list_align_verified').append(lis);
 
 }
 
-/*reference*/
+//reference/
 if(qualification_id == '32' || qualification_id == '33' || qualification_id == '34' || qualification_id == '35' ){
   //alert('referencre');
 //var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextpv('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/REFFERENCE-ICON.png" class="li_imgs_1"><h2 class="li_h2">'+superr_objj.First_Name+''+superr_objj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+superr_objj.verification_for+'</p><p class="li_p">'+superr_objj.taskname+'</p><p class="li_p">'+superr_objj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+superr_objj.verification_user_id+'</b></a></li>'
@@ -199,16 +198,8 @@ var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick=
 $('#list_align_verified').append(lis);
 }
 
-/*distributor residential address verification*/
-/*if(qualification_id == '40' ){
-  //alert('distributor residentisl address');
-var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextpv('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/BANK.png" class="li_imgs_1"><h2 class="li_h2">'+superr_objj.First_Name+''+superr_objj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+superr_objj.verification_for+'</p><p class="li_p">'+superr_objj.task_name+'</p><p class="li_p">'+superr_objj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+superr_objj.verification_user_id+'</b></a></li>'
 
-$('#lis_align_inpro').append(lis);
-
-}*/
-
-/*distributor details*/
+//distributor details/
 if(qualification_id == '41' ){
   //alert('distributor details');
 //var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextpv('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/Distributor-icon.png" class="li_imgs_1"><h2 class="li_h2">'+superr_objj.First_Name+''+superr_objj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+superr_objj.verification_for+'</p><p class="li_p">'+superr_objj.taskname+'</p><p class="li_p">'+superr_objj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+superr_objj.verification_user_id+'</b></a></li>'
@@ -218,7 +209,7 @@ $('#list_align_verified').append(lis);
 
 }
 
-/*address details*/
+//address details/
 if(qualification_id == '42' || qualification_id == '46' || qualification_id == '44' || qualification_id == '48' || qualification_id == '30' || qualification_id == '40' || qualification_id == '70' || qualification_id == '84'){
  //alert('common web ware supplier');
 //var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextpv('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/address-icon.png" class="li_imgs_1"><h2 class="li_h2">'+superr_objj.First_Name+''+superr_objj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+superr_objj.verification_for+'</p><p class="li_p">'+superr_objj.taskname+'</p><p class="li_p">'+superr_objj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+superr_objj.verification_user_id+'</b></a></li>'
@@ -228,7 +219,7 @@ $('#list_align_verified').append(lis);
 
 }
 
-/*web verification of antecedents*/
+//web verification of antecedents/
 if(qualification_id == '43' ){
  // alert('web verification');
 //var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextpv('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/web-verification_icon.png" class="li_imgs_1"><h2 class="li_h2">'+superr_objj.First_Name+''+superr_objj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+superr_objj.verification_for+'</p><p class="li_p">'+superr_objj.taskname+'</p><p class="li_p">'+superr_objj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+superr_objj.verification_user_id+'</b></a></li>'
@@ -237,7 +228,7 @@ var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick=
 $('#list_align_verified').append(lis);
 
 }
-/*supplier vendor details*/
+//supplier vendor details/
 if(qualification_id == '47' ){
  // alert('supplier vendor');
 //var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextpv('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/supplier-verification-icon.png" class="li_imgs_1"><h2 class="li_h2">'+superr_objj.First_Name+''+superr_objj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+superr_objj.verification_for+'</p><p class="li_p">'+superr_objj.taskname+'</p><p class="li_p">'+superr_objj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+superr_objj.verification_user_id+'</b></a></li>'
@@ -246,7 +237,7 @@ var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick=
 $('#list_align_verified').append(lis);
 
 }
-/*ware house leasing*/
+//ware house leasing/
 if(qualification_id == '45' ){
   //alert('ware housing');
 //var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextpv('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/Warehouseverification_icon.png" class="li_imgs_1"><h2 class="li_h2">'+superr_objj.First_Name+''+superr_objj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+superr_objj.verification_for+'</p><p class="li_p">'+superr_objj.taskname+'</p><p class="li_p">'+superr_objj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+superr_objj.verification_user_id+'</b></a></li>'
@@ -256,7 +247,7 @@ $('#list_align_verified').append(lis);
 
 }
 
-/*bank*/
+//bank/
 if(qualification_id == '64' ){
  // alert('bank 64');
 //var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextpv('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/BANK.png" class="li_imgs_1"><h2 class="li_h2">'+superr_objj.First_Name+''+superr_objj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+superr_objj.verification_for+'</p><p class="li_p">'+superr_objj.taskname+'</p><p class="li_p">'+superr_objj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+superr_objj.verification_user_id+'</b></a></li>'
@@ -266,7 +257,7 @@ $('#list_align_verified').append(lis);
 
 }
 
-/*driving licence*/
+//driving licence/
 if(qualification_id == '56' ){
   //alert('driving licence 56');
 //var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextpv('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/DrivingLicence-verification_icon.png" class="li_imgs_1"><h2 class="li_h2">'+superr_objj.First_Name+''+superr_objj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+superr_objj.verification_for+'</p><p class="li_p">'+superr_objj.taskname+'</p><p class="li_p">'+superr_objj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+superr_objj.verification_user_id+'</b></a></li>'
@@ -276,7 +267,7 @@ $('#list_align_verified').append(lis);
 
 }
 
-/*identity */
+//identity /
 if(qualification_id == '65' ){
   //alert('identity 65');
 //var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextpv('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/identity-icon.png" class="li_imgs_1"><h2 class="li_h2">'+superr_objj.First_Name+''+superr_objj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+superr_objj.verification_for+'</p><p class="li_p">'+superr_objj.taskname+'</p><p class="li_p">'+superr_objj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+superr_objj.verification_user_id+'</b></a></li>'
@@ -285,7 +276,7 @@ var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick=
 $('#list_align_verified').append(lis);
 
 }
-/*credential */
+//credential /
 if(qualification_id == '39' ){
   //alert('credential  39');
 //var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextpv('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/Credential-icon.png" class="li_imgs_1"><h2 class="li_h2">'+superr_objj.First_Name+''+superr_objj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+superr_objj.verification_for+'</p><p class="li_p">'+superr_objj.taskname+'</p><p class="li_p">'+superr_objj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+superr_objj.verification_user_id+'</b></a></li>'
@@ -294,7 +285,7 @@ var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick=
 $('#list_align_verified').append(lis);
 
 }
-/*bankrupcy */
+//bankrupcy /
 if(qualification_id == '66' ){
   //alert('bankrupcy 66');
 //var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextpv('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/bankkruptcy-icon.png" class="li_imgs_1"><h2 class="li_h2">'+superr_objj.First_Name+''+superr_objj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+superr_objj.verification_for+'</p><p class="li_p">'+superr_objj.taskname+'</p><p class="li_p">'+superr_objj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+superr_objj.verification_user_id+'</b></a></li>'
@@ -304,7 +295,7 @@ $('#list_align_verified').append(lis);
 
 }
 
-/*professional licence*/
+//professional licence/
 if(qualification_id == '69' ){
   //alert('professional licence 69');
 //var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextpv('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/Proffessinoal-icon.png" class="li_imgs_1"><h2 class="li_h2">'+superr_objj.First_Name+''+superr_objj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+superr_objj.verification_for+'</p><p class="li_p">'+superr_objj.taskname+'</p><p class="li_p">'+superr_objj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+superr_objj.verification_user_id+'</b></a></li>'
@@ -314,8 +305,8 @@ $('#list_align_verified').append(lis);
 
 }
 
-/* 6verifi */
-/* servant  */
+// 6verifi /
+// servant  /
 if(qualification_id == '49' || qualification_id == '50' || qualification_id == '51' || qualification_id == '77' || qualification_id == '78' || qualification_id == '79'){
 //var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextpv('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/servant.png" class="li_imgs_1"><h2 class="li_h2">'+superr_objj.First_Name+''+superr_objj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+superr_objj.verification_for+'</p><p class="li_p">'+superr_objj.taskname+'</p><p class="li_p">'+superr_objj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+superr_objj.verification_user_id+'</b></a></li>'
 
@@ -324,7 +315,7 @@ var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick=
 $('#list_align_verified').append(lis);
 
 }
-/* servant education qualification 2*/
+// servant education qualification 2/
 if(qualification_id == '80' ){
  
 //var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextpv('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/servant.png" class="li_imgs_1"><h2 class="li_h2">'+superr_objj.First_Name+''+superr_objj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+superr_objj.verification_for+'</p><p class="li_p">'+superr_objj.taskname+'</p><p class="li_p">'+superr_objj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+superr_objj.verification_user_id+'</b></a></li>'
@@ -333,7 +324,7 @@ var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick=
 $('#list_align_verified').append(lis);
 
 }
-/* education salary 1*/
+// education salary 1/
 if(qualification_id == '75' ){
  
 //var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextpv('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/education-&-salary.png" class="li_imgs_1"><h2 class="li_h2">'+superr_objj.First_Name+''+superr_objj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+superr_objj.verification_for+'</p><p class="li_p">'+superr_objj.taskname+'</p><p class="li_p">'+superr_objj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+superr_objj.verification_user_id+'</b></a></li>'
@@ -342,7 +333,7 @@ var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick=
 $('#list_align_verified').append(lis);
 
 }
-/* education salary 2*/
+// education salary 2/
 if(qualification_id == '76' ){
  
 //var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextpv('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/education-&-salary.png" class="li_imgs_1"><h2 class="li_h2">'+superr_objj.First_Name+''+superr_objj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+superr_objj.verification_for+'</p><p class="li_p">'+superr_objj.taskname+'</p><p class="li_p">'+superr_objj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+superr_objj.verification_user_id+'</b></a></li>'
@@ -351,7 +342,7 @@ var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick=
 $('#list_align_verified').append(lis);
 
 }
-/* criminal 1*/
+// criminal 1/
 if(qualification_id == '71' || qualification_id == '72' || qualification_id == '73' || qualification_id == '74' ){
  
 //var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextpv('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/criminal.png" class="li_imgs_1"><h2 class="li_h2">'+superr_objj.First_Name+''+superr_objj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+superr_objj.verification_for+'</p><p class="li_p">'+superr_objj.taskname+'</p><p class="li_p">'+superr_objj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+superr_objj.verification_user_id+'</b></a></li>'
@@ -360,7 +351,7 @@ var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick=
 $('#list_align_verified').append(lis);
 
 }
-/* employmnet gap 1 and criminal 2-->74*/
+// employmnet gap 1 and criminal 2-->74/
 if(qualification_id == '81' || qualification_id == '82' || qualification_id == '83'  ){
  
 //var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextpv('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/employment-gap.png" class="li_imgs_1"><h2 class="li_h2">'+superr_objj.First_Name+''+superr_objj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+superr_objj.verification_for+'</p><p class="li_p">'+superr_objj.taskname+'</p><p class="li_p">'+superr_objj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+superr_objj.verification_user_id+'</b></a></li>'
@@ -369,7 +360,7 @@ var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick=
 $('#list_align_verified').append(lis);
 
 }
-/* delinquent 1*/
+// delinquent 1/
 if(qualification_id == '89' || qualification_id == '90' || qualification_id == '91' || qualification_id == '92' || qualification_id == '93'){
  
 //var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextpv('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/delinquent.png" class="li_imgs_1"><h2 class="li_h2">'+superr_objj.First_Name+''+superr_objj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+superr_objj.verification_for+'</p><p class="li_p">'+superr_objj.taskname+'</p><p class="li_p">'+superr_objj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+superr_objj.verification_user_id+'</b></a></li>'
@@ -378,7 +369,7 @@ var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick=
 $('#list_align_verified').append(lis);
 
 }
-/* integrity & lifestyle 1*/
+// integrity & lifestyle 1/
 if(qualification_id == '85' ){
  
 //var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextpv('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/Proffessinoal-icon.png" class="li_imgs_1"><h2 class="li_h2">'+superr_objj.First_Name+''+superr_objj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+superr_objj.verification_for+'</p><p class="li_p">'+superr_objj.taskname+'</p><p class="li_p">'+superr_objj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+superr_objj.verification_user_id+'</b></a></li>'
@@ -387,7 +378,7 @@ var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick=
 $('#list_align_verified').append(lis);
 
 }
-/* integrity & life style 2*/
+//integrity & life style 2/
 if(qualification_id == '86' || qualification_id == '87' || qualification_id == '88' ){
  
 //var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextpv('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/Proffessinoal-icon.png" class="li_imgs_1"><h2 class="li_h2">'+superr_objj.First_Name+''+superr_objj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+superr_objj.verification_for+'</p><p class="li_p">'+superr_objj.taskname+'</p><p class="li_p">'+superr_objj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+superr_objj.verification_user_id+'</b></a></li>'
@@ -396,7 +387,7 @@ var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick=
 $('#list_align_verified').append(lis);
 
 }
-/* security*/
+// security/
 if(qualification_id == '94'  ){
  
 // var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="callnextpv('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/Proffessinoal-icon.png" class="li_imgs_1"><h2 class="li_h2">'+superr_objj.First_Name+''+superr_objj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+superr_objj.verification_for+'</p><p class="li_p">'+superr_objj.taskname+'</p><p class="li_p">'+superr_objj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+superr_objj.verification_user_id+'</b></a></li>'
@@ -404,7 +395,7 @@ var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick=
 
 $('#list_align_verified').append(lis);
 
-}
+}*/
 
 /* accident details*/
 if(qualification_id == '95'  ){

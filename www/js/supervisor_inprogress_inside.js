@@ -617,7 +617,7 @@ $.ajax({
 
 });
 
-$("#edit_insured_Cancel").click(function(){
+$("#edit_accident_Cancel").click(function(){
    $("#edit_acci_details_a").popup("close"); 
 
 $.mobile.changePage($('#pagedesign'), { transition: "none", changeHash: true, reverse: false });
@@ -752,7 +752,7 @@ $.ajax({
 
 });
 
-$("#edit_insured_Cancel").click(function(){
+$("#edit_vehicle_Cancel").click(function(){
    $("#edit_claimant_details_acc_vehic").popup("close"); 
    
 $.mobile.changePage($('#pagedesign'), { transition: "none", changeHash: true, reverse: false });
@@ -1105,7 +1105,7 @@ $.ajax({
 
 });
 
-$("#edit_insured_Cancel").click(function(){
+$("#edit_insured_edit_Cancel").click(function(){
    $("#edit_insured_details").popup("close"); 
 $.mobile.changePage($('#pagedesign'), { transition: "none", changeHash: true, reverse: false });
 return false;
@@ -1209,7 +1209,7 @@ $.ajax({
 
 });
 
-$("#edit_insured_Cancel").click(function(){
+$("#edit_poli_Cancel").click(function(){
    $("#edit_claimant_details_policy").popup("close"); 
    
 $.mobile.changePage($('#pagedesign'), { transition: "none", changeHash: true, reverse: false });
@@ -1396,7 +1396,7 @@ $.ajax({
 
 });
 
-$("#edit_insured_Cancel").click(function(){
+$("#edit_in_fir_Cancel").click(function(){
    $("#edit_fir_details").popup("close"); 
 $.mobile.changePage($('#pagedesign'), { transition: "none", changeHash: true, reverse: false });
 return false;
@@ -1594,7 +1594,7 @@ $.ajax({
 
 });
 
-$("#edit_insured_Cancel").click(function(){
+$("#edit_ownerr_Cancel").click(function(){
    $("#edit_ownero_driver_details").popup("close"); 
    
 $.mobile.changePage($('#pagedesign'), { transition: "none", changeHash: true, reverse: false });
@@ -2393,7 +2393,7 @@ $.ajax({
 
 });
 
-$("#edit_insured_Cancel").click(function(){
+$("#edit_outside_driver_Cancel").click(function(){
    $("#edit_outside_driver_details").popup("close"); 
 $.mobile.changePage($('#pagedesign'), { transition: "none", changeHash: true, reverse: false });
 return false;

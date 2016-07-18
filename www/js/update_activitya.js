@@ -279,11 +279,12 @@ if(qualification_id == '97'){
 
   }
 });
-$( '#radio-choice-ab-inpro' ).click(function() {
+/*$( '#radio-choice-ab-inpro' ).click(function() {
+  alert('97');
   if(qualification_id == '97'){
     $('#accident_show').hide();
   }
-});
+});*/
 
 }
 		//fir
@@ -308,6 +309,7 @@ $('#accident_three_field_nine_five').hide();
   }
 });
 $( '#radio-choice-ab-inpro' ).click(function() {
+  //alert('97');
   if(qualification_id == '97'){
     $('#fir_two_field_nine_seven').hide();
   }
@@ -333,6 +335,7 @@ $('#accident_three_field_nine_five').hide();
   }
 });
 $( '#radio-choice-ab-inpro' ).click(function() {
+  //alert('101');
   if(qualification_id == '101'){
     $('#insured_one_zero_one').hide();
   }
@@ -355,6 +358,7 @@ $( '#radio-choice-bb-instrue' ).click(function() {
   }
 });
 $( '#radio-choice-ab-inpro' ).click(function() {
+ // alert('106');
   if(qualification_id == '106'){
     $('#plociy_one_zero_six').hide();
   }
@@ -386,6 +390,7 @@ $( '#radio-choice-bb-instrue' ).click(function() {
   }
 });
 $( '#radio-choice-ab-inpro' ).click(function() {
+  //alert("95");
   if(qualification_id == '95'){
     $('#accident_three_field_nine_five').hide();
 
@@ -411,6 +416,7 @@ $( '#radio-choice-bb-instrue' ).click(function() {
   }
 });
 $( '#radio-choice-ab-inpro' ).click(function() {
+ // alert('100');
   if(qualification_id == '100'){
     $('#owner_driver_two_field_hundred').hide();
   }
@@ -436,6 +442,7 @@ $( '#radio-choice-bb-instrue' ).click(function() {
   }
 });
 $( '#radio-choice-ab-inpro' ).click(function() {
+  //alert('99');
   if(qualification_id == '99'){
     $('#outside_driver_two_field_nine_nine').hide();
   }
@@ -463,6 +470,7 @@ $('#accident_three_field_nine_five').hide();
   }
 });
 $( '#radio-choice-ab-inpro' ).click(function() {
+  //alert('102');
   if(qualification_id == '102'){
     $('#claimant_details_two_field_hundred_zero_two').hide();
   }
@@ -476,6 +484,34 @@ var insu_investiagtor_nine_seven_b=document.getElementById('insu_investiagtor_ni
 
 var status_val_inpr_inpro = $('input:radio[name=radio-choice-a-true]:checked').val();
 //alert(status_val_inpr_inpro);
+var loginistant_insu=document.getElementById('messageText_insu').value;
+//alert(loginistant_insu+'loginistant_insu');
+
+if(loginistant_insu != '' && status_val_inpr_inpro == 'Inprogress_ins'){
+
+//alert('chat');
+
+$.ajaxPrefilter(function( options, originalOptions, jqXHR ) {
+  options.async = true;
+});
+
+//alert(sdocument+'sdocument'+'save typed msg');
+var formData = $("#callAjaxForm").serialize();
+//alert('updateactivitya msg');
+$.ajax({
+  type: "POST",
+url: "http://staging.eimpressive.com/slim_insurance/slim_four_ripsssjs/chat_insu.php?loginistant_insu="+loginistant_insu+"&verification_user_id="+verification_user_id+"&coordinator_id="+coordinator_id+"&status_val_inpro="+status_val_inpro+"&remarkg="+remarkg+"&qualification_id="+qualification_id+"&username="+username+"&typofver="+typofver+"&pertobever="+pertobever+"&pertobeverlast="+pertobeverlast+"&task="+task+"&eeemail="+eeemail+"&user_id="+user_id,
+
+  data: formData,
+  success: onSuccess,
+  async: 'true',
+  crossDomain: true,
+  dataType: 'json',
+  error: onError
+});
+document.getElementById('messageText_insu').value="";
+}
+
 if(status_val_inpr_inpro != 'Inprogress_ins'){//radio button
 //fir version of the accident start
 if(qualification_id == '97'){
@@ -1315,9 +1351,9 @@ $('#chatr').append(chatr);
 if(status == 'doc' && image !==''){
 //alert('doc');
 
-//var chatr='<div class="ui-grid-b" style="padding-top:5%;padding-bottom:5%"><div class="ui-block-a msg_grid_3"><span class="msg_span_3">'+date+'</span> <br><i class="zmdi zmdi-time zmd-fw" style="opacity: 0.5; padding-left:7%;    padding-top: 7%;margin-top:-10px"></i><span class="msg_span_3">'+time+'</span></div><div class="ui-block-b msg_grid_4">  <p class="msg_box msg_mid_bgg"><img src="http://staging.eimpressive.com/insurance/super/'+activity_lok_obj.document+'" style="width:100px;height:80px;margin-left:25%" alt="Band"></p></div><div class="ui-block-c msg_grid_5"><img src="images/primary/chat-icon.png" alt="" style="padding: 0px 2px 1px 18px;"><p style="float: right;margin-right: 25px;margin-top: -5px;color:#54566B">hari</p></div></div>  '
-//var chatr='<div class="ui-grid-b" style="padding-top:5%;padding-bottom:5%"><div class="ui-block-a msg_grid_3"><span class="msg_span_3">'+date+'</span> <br><i class="zmdi zmdi-time zmd-fw" style="opacity: 0.5; padding-left:7%;    padding-top: 7%;margin-top:-10px"></i><span class="msg_span_3 msg_span_3_new">'+time+'</span></div><div class="ui-block-b msg_grid_4">  <p class="msg_box msg_mid_bgg"><img src="http://staging.eimpressive.com/insurance/super/'+activity_lok_obj.document+'" style="width:100px;height:80px;margin-left:25%" alt="Band"></p></div><div class="ui-block-c msg_grid_5 msg_grid_5_c"><img src="images/primary/chat-icon.png" alt="" class=""><p class="">TVO</p></div></div>'
-var chatr='<br><div class="ui-grid-b"  id="image"><div class="ui-block-a msg_grid_3" style="margin-top: 6%;"> <i class="zmdi zmdi-time zmd-fw" style="    opacity: 0.5; padding-left:7%;"></i><span class="msg_span_3">'+time+'</span><br><span class="msg_span_3">'+date+'</span><a href="#"  class="delete" id="'+activity_lok_obj.activity_log_id+'"><img src="images/primary/delete_icon1.png"  class="img_delete_icon" alt="" ></a>  </div><div class="ui-block-b msg_box msg_grid_4 msg_mid_bgg"><p class="msg_grid_p_1 "><a href="#popupPhotoPortrait" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline im" data-transition="fade" id="'+activity_lok_obj.document+'"><img src="http://staging.eimpressive.com/insurance/super/'+activity_lok_obj.document+'"  class="imgsize imguirot" alt="" ></a></p></div><div class="ui-block-c msg_grid_5 msg_grid_5_1"><img src="images/primary/chat-icona.png" alt="" class="p_img_grid" style="width:80px;"><br><p class="p_msg_grid">'+username_tvo+'</p></div></div> '
+//var chatr='<div class="ui-grid-b" style="padding-top:5%;padding-bottom:5%"><div class="ui-block-a msg_grid_3"><span class="msg_span_3">'+date+'</span> <br><i class="zmdi zmdi-time zmd-fw" style="opacity: 0.5; padding-left:7%;    padding-top: 7%;margin-top:-10px"></i><span class="msg_span_3">'+time+'</span></div><div class="ui-block-b msg_grid_4">  <p class="msg_box msg_mid_bgg"><img src="http://staging.eimpressive.com/insurance-changes/super/'+activity_lok_obj.document+'" style="width:100px;height:80px;margin-left:25%" alt="Band"></p></div><div class="ui-block-c msg_grid_5"><img src="images/primary/chat-icon.png" alt="" style="padding: 0px 2px 1px 18px;"><p style="float: right;margin-right: 25px;margin-top: -5px;color:#54566B">hari</p></div></div>  '
+//var chatr='<div class="ui-grid-b" style="padding-top:5%;padding-bottom:5%"><div class="ui-block-a msg_grid_3"><span class="msg_span_3">'+date+'</span> <br><i class="zmdi zmdi-time zmd-fw" style="opacity: 0.5; padding-left:7%;    padding-top: 7%;margin-top:-10px"></i><span class="msg_span_3 msg_span_3_new">'+time+'</span></div><div class="ui-block-b msg_grid_4">  <p class="msg_box msg_mid_bgg"><img src="http://staging.eimpressive.com/insurance-changes/super/'+activity_lok_obj.document+'" style="width:100px;height:80px;margin-left:25%" alt="Band"></p></div><div class="ui-block-c msg_grid_5 msg_grid_5_c"><img src="images/primary/chat-icon.png" alt="" class=""><p class="">TVO</p></div></div>'
+var chatr='<br><div class="ui-grid-b"  id="image"><div class="ui-block-a msg_grid_3" style="margin-top: 6%;"> <i class="zmdi zmdi-time zmd-fw" style="    opacity: 0.5; padding-left:7%;"></i><span class="msg_span_3">'+time+'</span><br><span class="msg_span_3">'+date+'</span><a href="#"  class="delete" id="'+activity_lok_obj.activity_log_id+'"><img src="images/primary/delete_icon1.png"  class="img_delete_icon" alt="" ></a>  </div><div class="ui-block-b msg_box msg_grid_4 msg_mid_bgg"><p class="msg_grid_p_1 "><a href="#popupPhotoPortrait" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline im" data-transition="fade" id="'+activity_lok_obj.document+'"><img src="http://staging.eimpressive.com/insurance-changes/super/'+activity_lok_obj.document+'"  class="imgsize imguirot" alt="" ></a></p></div><div class="ui-block-c msg_grid_5 msg_grid_5_1"><img src="images/primary/chat-icona.png" alt="" class="p_img_grid" style="width:80px;"><br><p class="p_msg_grid">'+username_tvo+'</p></div></div> '
 
 $('#chatr').append(chatr);
 }
@@ -1347,7 +1383,7 @@ $(".im").click(function(){
 var element = $(this);
 var img_id = element.attr("id");
 //alert(img_id+'asdasdw');
-var imz='<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right" style="background-color:#BC3217;width:50px;height: 50px;">Close</a><img src="http://staging.eimpressive.com/insurance/super/'+img_id+'" alt="Photo portrait" class="imgzz imguirot">'
+var imz='<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right" style="background-color:#BC3217;width:50px;height: 50px;">Close</a><img src="http://staging.eimpressive.com/insurance-changes/super/'+img_id+'" alt="Photo portrait" class="imgzz imguirot">'
 $('.imj').append(imz);
 });
 
@@ -1527,9 +1563,9 @@ $('#chatr').append(chatr);
 
 if(status == 'doc' && image !==''){
 //alert('doc');
-//var chatr='<div class="ui-grid-b"  id="image"><div class="ui-block-a msg_grid_3" style="margin-top: 6%;"> <i class="zmdi zmdi-time zmd-fw" style="    opacity: 0.5; padding-left:7%;"></i><span class="msg_span_3">'+time+'</span><br><span class="msg_span_3">'+date+'</span>  </div><div class="ui-block-b msg_box msg_grid_4 msg_mid_bgg"><p class="msg_grid_p_1 "><a href="#"  class=""><img src="http://staging.eimpressive.com/insurance/super/'+activity_lok_obj.document+'" style="width:100px;height:80px;margin-left:25%" alt="Band"></a></p></div><div class="ui-block-c msg_grid_5 msg_grid_5_1"><img src="images/use.png" alt="" class="p_img_grid" style="width:80px;"><br><p class="p_msg_grid">Tvo</p></div></div> '
-//var chatr='<br><div class="ui-grid-b"  id="image"><div class="ui-block-a msg_grid_3" style="margin-top: 6%;"> <i class="zmdi zmdi-time zmd-fw" style="    opacity: 0.5; padding-left:7%;"></i><span class="msg_span_3">'+time+'</span><br><span class="msg_span_3">'+date+'</span><a href="#"  class="delete" id="'+activity_lok_obj.activity_log_id+'"><img src="images/primary/delete_icon1.png"  class="img_delete_icon" alt="" ></a>  </div><div class="ui-block-b msg_box msg_grid_4 msg_mid_bgg"><p class="msg_grid_p_1 "><a href="#popupPhotoPortrait" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline im" data-transition="fade" id="'+activity_lok_obj.activity_log_id+'"><img src="http://staging.eimpressive.com/insurance/super/'+activity_lok_obj.document+'"  class="imgsize" alt="" ></a></p></div><div class="ui-block-c msg_grid_5 msg_grid_5_1"><img src="images/primary/chat-icon.png" alt="" class="p_img_grid" style="width:80px;"><br><p class="p_msg_grid">'+username_tvo+'</p></div></div> '
-var chatr='<br><div class="ui-grid-b"  id="image"><div class="ui-block-a msg_grid_3" style="margin-top: 6%;"> <i class="zmdi zmdi-time zmd-fw" style="    opacity: 0.5; padding-left:7%;"></i><span class="msg_span_3">'+time+'</span><br><span class="msg_span_3">'+date+'</span><a href="#"  class="delete" id="'+activity_lok_obj.activity_log_id+'"><img src="images/primary/delete_icon1.png"  class="img_delete_icon" alt="" ></a>  </div><div class="ui-block-b msg_box msg_grid_4 msg_mid_bgg"><p class="msg_grid_p_1 "><a href="#popupPhotoPortrait" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline im" data-transition="fade" id="'+activity_lok_obj.document+'"><img src="http://staging.eimpressive.com/insurance/super/'+activity_lok_obj.document+'"  class="imgsize imguirot" alt="" ></a></p></div><div class="ui-block-c msg_grid_5 msg_grid_5_1"><img src="images/primary/chat-icona.png" alt="" class="p_img_grid" style="width:80px;"><br><p class="p_msg_grid">'+username_tvo+'</p></div></div> '
+//var chatr='<div class="ui-grid-b"  id="image"><div class="ui-block-a msg_grid_3" style="margin-top: 6%;"> <i class="zmdi zmdi-time zmd-fw" style="    opacity: 0.5; padding-left:7%;"></i><span class="msg_span_3">'+time+'</span><br><span class="msg_span_3">'+date+'</span>  </div><div class="ui-block-b msg_box msg_grid_4 msg_mid_bgg"><p class="msg_grid_p_1 "><a href="#"  class=""><img src="http://staging.eimpressive.com/insurance-changes/super/'+activity_lok_obj.document+'" style="width:100px;height:80px;margin-left:25%" alt="Band"></a></p></div><div class="ui-block-c msg_grid_5 msg_grid_5_1"><img src="images/use.png" alt="" class="p_img_grid" style="width:80px;"><br><p class="p_msg_grid">Tvo</p></div></div> '
+//var chatr='<br><div class="ui-grid-b"  id="image"><div class="ui-block-a msg_grid_3" style="margin-top: 6%;"> <i class="zmdi zmdi-time zmd-fw" style="    opacity: 0.5; padding-left:7%;"></i><span class="msg_span_3">'+time+'</span><br><span class="msg_span_3">'+date+'</span><a href="#"  class="delete" id="'+activity_lok_obj.activity_log_id+'"><img src="images/primary/delete_icon1.png"  class="img_delete_icon" alt="" ></a>  </div><div class="ui-block-b msg_box msg_grid_4 msg_mid_bgg"><p class="msg_grid_p_1 "><a href="#popupPhotoPortrait" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline im" data-transition="fade" id="'+activity_lok_obj.activity_log_id+'"><img src="http://staging.eimpressive.com/insurance-changes/super/'+activity_lok_obj.document+'"  class="imgsize" alt="" ></a></p></div><div class="ui-block-c msg_grid_5 msg_grid_5_1"><img src="images/primary/chat-icon.png" alt="" class="p_img_grid" style="width:80px;"><br><p class="p_msg_grid">'+username_tvo+'</p></div></div> '
+var chatr='<br><div class="ui-grid-b"  id="image"><div class="ui-block-a msg_grid_3" style="margin-top: 6%;"> <i class="zmdi zmdi-time zmd-fw" style="    opacity: 0.5; padding-left:7%;"></i><span class="msg_span_3">'+time+'</span><br><span class="msg_span_3">'+date+'</span><a href="#"  class="delete" id="'+activity_lok_obj.activity_log_id+'"><img src="images/primary/delete_icon1.png"  class="img_delete_icon" alt="" ></a>  </div><div class="ui-block-b msg_box msg_grid_4 msg_mid_bgg"><p class="msg_grid_p_1 "><a href="#popupPhotoPortrait" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline im" data-transition="fade" id="'+activity_lok_obj.document+'"><img src="http://staging.eimpressive.com/insurance-changes/super/'+activity_lok_obj.document+'"  class="imgsize imguirot" alt="" ></a></p></div><div class="ui-block-c msg_grid_5 msg_grid_5_1"><img src="images/primary/chat-icona.png" alt="" class="p_img_grid" style="width:80px;"><br><p class="p_msg_grid">'+username_tvo+'</p></div></div> '
 
 $('#chatr').append(chatr);
 }
@@ -1557,7 +1593,7 @@ var element = $(this);
 var img_id = element.attr("id");
 //alert(img_id+'asdasdw');
 //var imz='<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right" style="background-color:#3F4150;width:50px;height: 50px;">Close</a><img src="images/primary/Screenshot.png" alt="Photo portrait" class="imgzz">'
-var imz='<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right" style="background-color:#BC3217;width:50px;height: 50px;">Close</a><img src="http://staging.eimpressive.com/insurance/super/'+img_id+'" alt="Photo portrait" class="imgzz imguirot">'
+var imz='<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right" style="background-color:#BC3217;width:50px;height: 50px;">Close</a><img src="http://staging.eimpressive.com/insurance-changes/super/'+img_id+'" alt="Photo portrait" class="imgzz imguirot">'
 
 $('.imj').append(imz);
 });
@@ -1596,7 +1632,7 @@ alert("Network error: Please check your internet connection");
 
 var settings = {
 
-  url: "http://staging.eimpressive.com/insurance/uploadas.php",
+  url: "http://staging.eimpressive.com/insurance-changes/uploadas.php",
   method: "POST",
   allowedTypes:"jpg,png,gif",
   /*allowedTypes:"jpg,png,gif,doc,pdf,zip",*/
@@ -1609,7 +1645,7 @@ var settings = {
     sessionStorage.setItem("ret",JSON.stringify(data));
     ret =  JSON.parse(sessionStorage.getItem("ret"));
     //var res = ret.slice(12,100); //fourth
-    var res = ret.slice(135,300); //stage
+    var res = ret.slice(143,300); //stage
    // alert(res+'res');
    //alert(verification_user_id+'verification_user_id');
       //alert(coordinator_id+'coordinator_id');

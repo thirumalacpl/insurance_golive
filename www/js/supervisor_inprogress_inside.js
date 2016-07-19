@@ -1918,7 +1918,7 @@ $.ajax({
 
 });
 
-$("#edit_insured_Cancel").click(function(){
+$("#edit_insured_claim_Cancel").click(function(){
    $("#edit_claimant_details").popup("close"); 
    
 $.mobile.changePage($('#pagedesign'), { transition: "none", changeHash: true, reverse: false });
